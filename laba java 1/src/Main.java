@@ -31,6 +31,7 @@ public class Main {
                         zad2 = input.charAt(0);
                         break;
                     }
+                    System.out.println("Можно вводить тольцо число от 1 до 9!");
                 }
                 char num2 = (char) s.charToNum(zad2);
                 s.charToNum(zad2);
