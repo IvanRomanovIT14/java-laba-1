@@ -1,6 +1,3 @@
-import java.sql.SQLOutput;
-import java.util.Scanner;
-
 class Task {
     public double fraction(double x) {
         int a = (int) x;
@@ -10,25 +7,33 @@ class Task {
     public int charToNum(char x) {
         if (x >= '0' && x <= '9') {
             return x - '0';
-        } else return 0;
+        } else {
+            return 0;
+        }
     }
 
     public boolean is2Digits(int x) {
         if (x >= 10 && x <= 99) {
             return true;
-        } else return false;
+        } else {
+            return false;
+        }
     }
 
     public boolean isInRange(int a, int b, int num) {
         if ((num >= a && num <= b) || (num <= a && num >= b)) {
             return true;
-        } else return false;
+        } else {
+            return false;
+        }
     }
 
     public boolean isEqual(int a, int b, int c) {
         if (a == b && b == c) {
             return true;
-        } else return false;
+        } else {
+            return false;
+        }
     }
 
     public int abs(int x) {
@@ -60,7 +65,9 @@ class Task {
     public int sum2(int x, int y) {
         if (x + y >= 10 && x + y <= 19) {
             return 20;
-        } else return x + y;
+        } else {
+            return x + y;
+        }
     }
 
     public String day(int x) {
@@ -144,7 +151,9 @@ class Task {
             if (arr[i] < 0) {
                 g = arr[i];
                 s = arr[i] * -1;
-            } else s = arr[i];
+            } else {
+                s = arr[i];
+            }
             g = arr[i];
             if (s > Math.abs(m)) {
                 m = g;
@@ -205,5 +214,3 @@ class Task {
         return res;
     }
 }
-
-
